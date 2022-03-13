@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <!--CSS Custom-->
+    <link rel="stylesheet" href="resources/css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title centrar-texto">Pokedex</h1>
+    </header>
+    <main>
+        <div class="pokedex">
+            <div class="dec-up">
+                <div class="circle1"></div>
+                <div class="circle c2"></div>
+                <div class="circle c3"></div>
+                <div class="circle 4"></div>
+            </div>
+    
+            <div class="pokemon-border">
+                    <div class="pokemon-container">
+                        <div id="inicio" class="inicio "></div>
+
+                        <div id="work" class="work no-display">
+                            <h1 id="nombre" class="pokemon__name centrar-texto"></h1>
+                            <div class="pokemon-info">
+                                <img src="" alt="Pokemon" width="150px" id="pokeImg"><br>
+                                <div class="pokemon__stats">
+                                    <p class="stat" id="hp"></p>
+                                    <p class="stat" id="attack"></p>
+                                    <p class="stat" id="defense"></p>
+                                    <p class="stat" id="sAttack"></p>
+                                    <p class="stat" id="sDefense"></p>
+                                    <p class="stat" id="speed"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="error" class="no-display">
+                            <img class="no-display" src="" alt="Error" width="100%" id="pokeError"><br>
+                        </div>
+                        
+                    </div>
+            </div>
+
+            <div class="dec-up dec-down">
+                <div class="circle2"></div>
+                <div class="rectangle r2"></div>
+                <div class="rectangle r3"></div>
+            </div>
+
+            <div class="formulario">
+                <input type="text" placeholder="Busca tu Pokemon" id="pokeName" name="pokeName"><br>
+                <button class="search" onclick="fetchPokemon()">
+                <div class="search-icon">
+
+                </div>
+                </button>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+
+    </footer>
+</body>
+    <!--Scripts-->
+    <script src="resources/js/scripts.js"></script>
+</html>

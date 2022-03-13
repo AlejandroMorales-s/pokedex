@@ -1,0 +1,252 @@
+:root{
+    --fuenteHeadings: 'poppins', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --primario: #784d3c;
+    --blanco: #ffffff;
+    --negro: #000; 
+    --gris: #e1e1e1;
+    --dex: #DD082F;
+    --circle1: #01FBFB;
+    --circle2: #519AFB;
+    --rec1: #2FF901;
+    --c3: #FFCC02;
+    --pokeMagin: #B0B0B0;
+    --searchBTN: #B42B2B;
+    --bg: #3B020D;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}  
+
+body{
+    font-size: 1.6rem;
+    font-family: var(--fuenteParrafos);
+    line-height: 2;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='900' preserveAspectRatio='none' viewBox='0 0 1440 900'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1151%26quot%3b)' fill='none'%3e%3crect width='1440' height='900' x='0' y='0' fill='rgba(59%2c 2%2c 13%2c 1)'%3e%3c/rect%3e%3cpath d='M223 418L-64 131' stroke-width='8' stroke='url(%23SvgjsLinearGradient1152)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M1102 206L1467 571' stroke-width='10' stroke='url(%23SvgjsLinearGradient1153)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M826 247L1391 812' stroke-width='10' stroke='url(%23SvgjsLinearGradient1153)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M1339 696L980 337' stroke-width='8' stroke='url(%23SvgjsLinearGradient1152)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M1234 62L1548 376' stroke-width='8' stroke='url(%23SvgjsLinearGradient1152)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M541 319L801 579' stroke-width='10' stroke='url(%23SvgjsLinearGradient1152)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M1109 870L532 293' stroke-width='10' stroke='url(%23SvgjsLinearGradient1153)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M841 168L323 -350' stroke-width='6' stroke='url(%23SvgjsLinearGradient1152)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M582 584L986 988' stroke-width='8' stroke='url(%23SvgjsLinearGradient1153)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M1423 822L2073 1472' stroke-width='8' stroke='url(%23SvgjsLinearGradient1153)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M320 73L-292 -539' stroke-width='10' stroke='url(%23SvgjsLinearGradient1153)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M1350 329L707 -314' stroke-width='10' stroke='url(%23SvgjsLinearGradient1152)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M1134 485L811 162' stroke-width='6' stroke='url(%23SvgjsLinearGradient1153)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M397 68L730 401' stroke-width='6' stroke='url(%23SvgjsLinearGradient1152)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M94 827L603 1336' stroke-width='6' stroke='url(%23SvgjsLinearGradient1152)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M889 481L1336 928' stroke-width='8' stroke='url(%23SvgjsLinearGradient1153)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M570 714L85 229' stroke-width='6' stroke='url(%23SvgjsLinearGradient1153)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M807 42L170 -595' stroke-width='10' stroke='url(%23SvgjsLinearGradient1152)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M1313 445L1708 840' stroke-width='6' stroke='url(%23SvgjsLinearGradient1153)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M248 137L897 786' stroke-width='10' stroke='url(%23SvgjsLinearGradient1153)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M237 575L515 853' stroke-width='10' stroke='url(%23SvgjsLinearGradient1153)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M871 575L1099 803' stroke-width='10' stroke='url(%23SvgjsLinearGradient1152)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M1088 717L1374 1003' stroke-width='8' stroke='url(%23SvgjsLinearGradient1152)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M698 776L1058 1136' stroke-width='6' stroke='url(%23SvgjsLinearGradient1152)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M1403 387L1646 630' stroke-width='10' stroke='url(%23SvgjsLinearGradient1153)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M393 108L32 -253' stroke-width='6' stroke='url(%23SvgjsLinearGradient1152)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M725 325L1090 690' stroke-width='10' stroke='url(%23SvgjsLinearGradient1152)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M993 263L661 -69' stroke-width='10' stroke='url(%23SvgjsLinearGradient1152)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M1188 535L1621 968' stroke-width='6' stroke='url(%23SvgjsLinearGradient1153)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M1022 495L583 56' stroke-width='10' stroke='url(%23SvgjsLinearGradient1153)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M786 320L188 -278' stroke-width='6' stroke='url(%23SvgjsLinearGradient1153)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M1164 667L666 169' stroke-width='10' stroke='url(%23SvgjsLinearGradient1152)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M856 442L1274 860' stroke-width='8' stroke='url(%23SvgjsLinearGradient1153)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M1390 840L1897 1347' stroke-width='6' stroke='url(%23SvgjsLinearGradient1152)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M13 370L-276 81' stroke-width='10' stroke='url(%23SvgjsLinearGradient1152)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M1136 171L807 -158' stroke-width='10' stroke='url(%23SvgjsLinearGradient1152)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M47 234L453 640' stroke-width='6' stroke='url(%23SvgjsLinearGradient1152)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M1177 857L1793 1473' stroke-width='8' stroke='url(%23SvgjsLinearGradient1152)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M954 156L1621 823' stroke-width='6' stroke='url(%23SvgjsLinearGradient1153)' stroke-linecap='round' class='BottomRight'%3e%3c/path%3e%3cpath d='M769 447L1431 1109' stroke-width='10' stroke='url(%23SvgjsLinearGradient1152)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M868 188L1174 494' stroke-width='10' stroke='url(%23SvgjsLinearGradient1152)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M401 857L700 1156' stroke-width='6' stroke='url(%23SvgjsLinearGradient1152)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3cpath d='M629 651L314 336' stroke-width='6' stroke='url(%23SvgjsLinearGradient1152)' stroke-linecap='round' class='TopLeft'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1151'%3e%3crect width='1440' height='900' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='100%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1152'%3e%3cstop stop-color='rgba(255%2c 255%2c 255%2c 0)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(255%2c 255%2c 255%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='0%25' y1='0%25' x2='100%25' y2='100%25' id='SvgjsLinearGradient1153'%3e%3cstop stop-color='rgba(255%2c 255%2c 255%2c 0)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(255%2c 255%2c 255%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+/*Globales*/
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3 ,h4{
+    font-family: var(--fuenteHeadings);
+    line-height: 1;
+    color: var(--blanco);
+}
+
+h1{
+    font-size: 4.8rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3.2rem;
+}
+
+h4{
+    font-size: 2.8rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+p{
+    margin: 0;
+    color: var(--blanco);
+}
+
+/*Utilidades*/
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+.no-display{
+    display: none;
+}
+.display{
+    display: block;
+}
+
+/*Pokedex*/
+.title{
+    -webkit-text-stroke: 1px black;
+}
+.pokedex{
+    background-color: var(--dex);
+    width: 45rem;
+    height: max-content;
+    margin: 0 auto;
+    border-radius: 1.5rem 0 0 1.5rem;
+    border: 2px solid var(--negro);
+    box-shadow: 1rem 0px 0px 0px rgba(0, 0, 0, 1);
+}
+.dec-up{
+    width: 40rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    gap: 0.5rem;
+}
+.dec-down{
+    gap: 1rem;
+}
+.circle1{
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--circle1);
+    border-radius: 50%;
+    border: 2px solid var(--negro);
+}
+.circle2{
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: var(--circle2);
+    border-radius: 50%;
+    border: 2px solid var(--negro);
+}
+.circle{
+    width: 2rem;
+    height: 2rem;
+    background-color: yellow;
+    border-radius: 50%;
+    border: 2px solid var(--negro);
+}
+.rectangle{
+    border: 2px solid var(--negro);
+    width: 8rem;
+    height: 2rem;
+    border-radius: 1rem;
+}
+.r2{
+    background-color: var(--rec1);
+}
+.r3{
+    background-color: var(--c3);
+}
+.c2{
+    background-color: var(--dex);
+}
+.c3{
+    background-color: var(--c3);
+}
+
+/*Pokemon*/
+.pokemon-border{
+    background-color: var(--pokeMagin);
+    padding: 2rem;
+    width: 40rem;
+    height: 30rem;
+    border-radius: 1rem 1rem 0 0;
+    margin: 0 auto;
+    border: 2px solid var(--negro);
+}
+.inicio{
+    background-color: var(--negro);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border-radius: 1rem;
+}
+.pokemon-container{
+    height: 100%;
+    width: 100%;
+    border: 2px solid var(--negro);
+    border-radius: 1rem;
+    background-color: var(--blanco);
+}
+.pokemon__name{
+    font-size: 2.7rem;
+}
+.pokemon-info{
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+#nombre{
+    color: var(--negro);
+}
+#pokeImg{
+    width: 15rem;
+    height: 15rem;
+}
+.pokemon__stats{
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+}
+.stat{
+    color: var(--negro);
+}
+.habilidad{
+    font-weight: bold;
+}
+#error{
+    height: 100%;
+}
+#pokeError{
+    height: 100%;
+    border-radius: 1rem;
+}
+
+/*Input*/
+.formulario{
+    display: flex;
+    width: 40rem;
+    margin: 0 auto 3rem auto;
+    gap: 1rem;
+}
+#pokeName{
+    border-radius: 1rem;
+    height: 5rem;
+    width: 33rem;
+    background-color: var(--c3);
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+.search{
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    background-color: var(--searchBTN);
+}
+.search:hover{
+    cursor: pointer;
+}
+.search-icon{
+    margin: 0 auto;
+    background-image: url('../icons/search.png');
+    background-size: cover;
+    background-position: center center;
+    width: 90%;
+    height: 70%;
+}

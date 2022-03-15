@@ -7,7 +7,7 @@ const fetchPokemon = () => {
             //console.log(res);
             inicioError();
             noWork();
-            pokeError('../icons/wrong.gif');
+            pokeError('resources/icons/wrong.gif');
         }else {
             pokeErrorOk();
             inicio();

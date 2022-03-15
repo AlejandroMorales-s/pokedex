@@ -199,6 +199,10 @@ p{
     width: 15rem;
     height: 15rem;
 }
+#work{
+    max-height: 100%;
+    max-width: 100%;
+}
 .pokemon__stats{
     display: flex;
     flex-direction: column;

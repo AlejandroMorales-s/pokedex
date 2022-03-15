@@ -16,14 +16,14 @@ const fetchPokemon = () => {
         }
         //console.log(res);
     }).then((data) => {
-        //console.log(data);
+        console.log(data);
         let hp = data.stats[0].base_stat;
         let attack = data.stats[1].base_stat;
         let defense = data.stats[2].base_stat;
         let specialAttack = data.stats[3].base_stat;
         let specialDefense = data.stats[4].base_stat;
         let speed = data.stats[5].base_stat;
-        let pokeImg = data.sprites.front_default;
+        let pokeImg = data.sprites.other.dream_world.front_default;
         pokeHp(hp);
         pokeAttack(attack);
         pokeDefense(defense);

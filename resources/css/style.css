@@ -221,6 +221,9 @@ p{
     height: 100%;
     border-radius: 1rem;
 }
+.negritas{
+    font-weight: bold;
+}
 
 /*Input*/
 .formulario{

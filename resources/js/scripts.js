@@ -50,22 +50,22 @@ const pokeErrorOk = () =>{
     document.getElementById('pokeError').classList.add('no-display');
 }
 const pokeHp = (hp) => {
-    const pokeHp = document.getElementById('hp').innerHTML = `Hp: ${hp}`;
+    const pokeHp = document.getElementById('hp').innerHTML = `<span class="negritas">Hp:</span> ${hp}`;
 }
 const pokeAttack = (attack) => {
-    const pokeAttack = document.getElementById('attack').innerHTML = `Attack: ${attack}`;
+    const pokeAttack = document.getElementById('attack').innerHTML = `<span class="negritas">Attack:</span> ${attack}`;
 }
 const pokeDefense = (defense) => {
-    const pokeDefense = document.getElementById('defense').innerHTML = `Defense: ${defense}`;
+    const pokeDefense = document.getElementById('defense').innerHTML = `<span class="negritas">Defense:</span> ${defense}`;
 }
 const pokeSAttack = (specialAttack) => {
-    const pokeSAttack = document.getElementById('sAttack').innerHTML = `Special-Attack: ${specialAttack}`;
+    const pokeSAttack = document.getElementById('sAttack').innerHTML = `<span class="negritas">Special-Attack:</span> ${specialAttack}`;
 }
 const pokeSDefense = (specialDefense) => {
-    const pokeSDefense = document.getElementById('sDefense').innerHTML = `Special-Defense: ${specialDefense}`;
+    const pokeSDefense = document.getElementById('sDefense').innerHTML = `<span class="negritas">Special-Defense:</span> ${specialDefense}`;
 }
 const pokeSpeed = (speed) => {
-    const pokeSpeed = document.getElementById('speed').innerHTML = `Speed: ${speed}`;
+    const pokeSpeed = document.getElementById('speed').innerHTML = `<span class="negritas">Speed:</span> ${speed}`;
 }
 const pokemon = () => {
     const input = document.getElementById('pokeName');

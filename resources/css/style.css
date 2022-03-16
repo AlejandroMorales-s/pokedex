@@ -74,10 +74,10 @@ img{
 
 p{
     margin: 0;
-    color: var(--blanco);
 }
 .main{
     display: flex;
+    align-items: flex-end;
     margin: 0 auto;
 }
 
@@ -169,9 +169,21 @@ p{
     width: 44rem;
     background-color: var(--dex);
     height: max-content;
+    margin-left: 1rem;
     /*margin: 0 auto;*/
-    border-radius: 1.5rem 0 0 1.5rem;
     border: 2px solid var(--negro);
+    padding: 2.5rem 2.5rem;
+}
+.movimientos{
+    background-color: var(--blanco);
+}
+.mov{
+    color: var(--negro);
+}
+.nombre-mov{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
 }
 
 /*Pokemon*/
@@ -237,6 +249,7 @@ p{
 }
 .negritas{
     font-weight: bold;
+    color: var(--negro);
 }
 
 /*Input*/

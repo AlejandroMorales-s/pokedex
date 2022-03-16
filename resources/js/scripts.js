@@ -23,6 +23,12 @@ const fetchPokemon = () => {
         let specialAttack = data.stats[3].base_stat;
         let specialDefense = data.stats[4].base_stat;
         let speed = data.stats[5].base_stat;
+        let mov1 = data.moves[0].move.name; 
+        let mov2 = data.moves[1].move.name; 
+        let mov3 = data.moves[2].move.name; 
+        let mov4 = data.moves[3].move.name; 
+        let mov5 = data.moves[4].move.name; 
+        let mov6 = data.moves[5].move.name; 
         let pokeImg = data.sprites.other.dream_world.front_default;
         pokeHp(hp);
         pokeAttack(attack);
@@ -30,6 +36,7 @@ const fetchPokemon = () => {
         pokeSAttack(specialAttack);
         pokeSDefense(specialDefense);
         pokeSpeed(speed);
+        move(mov1, mov2, mov3, mov4, mov5, mov6);
         pokeImage(pokeImg);  
         pokemon();
     })
@@ -67,6 +74,9 @@ const pokeSDefense = (specialDefense) => {
 const pokeSpeed = (speed) => {
     const pokeSpeed = document.getElementById('speed').innerHTML = `<span class="negritas">Speed:</span> ${speed}`;
 }
+const move = (mov1, mov2, mov3, mov4, mov5, mov6) => {
+    const move = document.getElementById('mov').innerHTML =`<div class="nombre-mov"><p>${mov1}</p> <p>${mov2}</p> <p>${mov3}</p> <p>${mov4}</p> <p>${mov5}</p> <p>${mov6}</p> </div>`;
+}
 const pokemon = () => {
     const input = document.getElementById('pokeName');
     let name = input.value.toLowerCase().trim();
@@ -76,15 +86,11 @@ const inicio = () => {
     let contiene = document.getElementById('inicio').classList.contains('no-display')
     if (contiene == false) {
         document.getElementById('inicio').classList.add('no-display');
-    }else{
-        //console.log('se');
     }
 }
 const work = () => {
     let contiene = document.getElementById('work').classList.contains('no-display');
-    if (contiene == false) {
-        //console.log('se');
-    }else {
+    if (contiene != false) {
         document.getElementById('work').classList.remove('no-display');
     }
 }

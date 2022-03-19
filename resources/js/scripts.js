@@ -25,11 +25,12 @@ const fetchPokemon = () => {
         let speed = data.stats[5].base_stat;
         let mov1 = data.moves[0].move.name; 
         let mov2 = data.moves[1].move.name; 
-        let mov3 = data.moves[2].move.name; 
+        let mov3 = data.moves[2].move.name; 						
         let mov4 = data.moves[3].move.name; 
         let mov5 = data.moves[4].move.name; 
         let mov6 = data.moves[5].move.name; 
         let pokeImg = data.sprites.other.dream_world.front_default;
+        let type = data.types[0].type.name; 
         pokeHp(hp);
         pokeAttack(attack);
         pokeDefense(defense);
@@ -38,6 +39,7 @@ const fetchPokemon = () => {
         pokeSpeed(speed);
         move(mov1, mov2, mov3, mov4, mov5, mov6);
         pokeImage(pokeImg);  
+        pokeType(type);
         pokemon();
     })
 }
@@ -76,6 +78,9 @@ const pokeSpeed = (speed) => {
 }
 const move = (mov1, mov2, mov3, mov4, mov5, mov6) => {
     const move = document.getElementById('mov').innerHTML =`<div class="nombre-mov"><p>${mov1}</p> <p>${mov2}</p> <p>${mov3}</p> <p>${mov4}</p> <p>${mov5}</p> <p>${mov6}</p> </div>`;
+}
+const pokeType = (type) => {
+    const pokeType = document.getElementById('type').innerHTML = `${type}`;
 }
 const pokemon = () => {
     const input = document.getElementById('pokeName');

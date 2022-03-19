@@ -11,7 +11,7 @@
     --circle2: #519AFB;
     --rec1: #2FF901;
     --c3: #FFCC02;
-    --pokeMagin: #B0B0B0;
+    --pokeMagin: #dedede;
     --searchBTN: #B42B2B;
     --bg: #3B020D;
 }
@@ -130,24 +130,24 @@ p{
     height: 5rem;
     background-color: var(--circle1);
     border-radius: 50%;
-    border: 2px solid var(--negro);
+    border: 1px solid var(--negro);
 }
 .circle2{
     width: 4.5rem;
     height: 4.5rem;
     background-color: var(--circle2);
     border-radius: 50%;
-    border: 2px solid var(--negro);
+    border: 1px solid var(--negro);
 }
 .circle{
     width: 2rem;
     height: 2rem;
     background-color: yellow;
     border-radius: 50%;
-    border: 2px solid var(--negro);
+    border: 1px solid var(--negro);
 }
 .rectangle{
-    border: 2px solid var(--negro);
+    border: 1px solid var(--negro);
     width: 8rem;
     height: 2rem;
     border-radius: 1rem;
@@ -176,15 +176,18 @@ p{
     padding: 2.5rem 2.5rem;
 }
 .pantalla2{
-    height: 19.5rem;
-    background-color: var(--blanco);
-    padding: 2rem;
+    height: 20.5rem;
+    max-height: fit-content;
+    background-color: #f1f2d3;
+    border-radius: 1rem;
+    border: 1px solid var(--negro);
 }
 .title-mov{
     font-size: 2.7rem;
 }
 .movimientos{
-    background-color: var(--blanco);
+    margin-top: 1rem;
+    background-color: #f1f2d3;
 }
 .mov{
     color: var(--negro);
@@ -193,17 +196,34 @@ p{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
+    justify-items: center;
+}
+.squares{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 2rem;
+    border-radius: 1rem;
+}
+.square{
+    height: 4.5rem;
+    width: 100%;
+    border: 0.5px solid var(--negro);
+    background-color: #31a7f1;
+}
+#work-tapa{
+    padding: 2rem;
 }
 
 /*Pokemon*/
 .pokemon-border{
     background-color: var(--pokeMagin);
-    padding: 2rem;
+    padding: 2.5rem 2.5rem 6rem 2.5rem;
     width: 40rem;
-    height: 30rem;
-    border-radius: 1rem 1rem 0 0;
+    height: 34rem;
+    border-radius: 10px 10px 10px 75px;
     margin: 0 auto;
-    border: 2px solid var(--negro);
+    border: 1px solid var(--negro);
+    box-shadow: -5px 5px 0px 5px rgba(106,106,114,1);
 }
 .inicio{
     background-color: var(--negro);
@@ -215,25 +235,29 @@ p{
 .pokemon-container{
     height: 100%;
     width: 100%;
-    border: 2px solid var(--negro);
+    border: 1px solid var(--negro);
     border-radius: 1rem;
-    background-color: var(--blanco);
+    background-color: #f1f2d3;
+    overflow: hidden;
 }
 .pokemon__name{
     font-size: 2.7rem;
 }
 .pokemon-info{
     display: flex;
+    height: 21rem;
+    width: 100%;
     align-items: center;
     column-gap: 1.5rem;
+    margin-top: 1rem;
 }
 #nombre{
     color: var(--negro);
-    margin: 1.5rem 0;
+    margin: 1rem 0 0 0;
 }
 #pokeImg{
-    width: 15rem;
-    height: 15rem;
+    max-width: 15rem;
+    max-height: 15rem;
 }
 #work{
     height: 100%;
@@ -243,6 +267,7 @@ p{
     display: flex;
     flex-direction: column;
     gap: 0rem;
+    height: 100%;
 }
 .stat{
     color: var(--negro);
@@ -276,12 +301,14 @@ p{
     background-color: var(--c3);
     font-size: 1.8rem;
     font-weight: bolder;
+    border: 1px solid var(--negro);
 }
 .search{
     border-radius: 50%;
     height: 5rem;
     width: 5rem;
     background-color: var(--searchBTN);
+    border: 1px solid var(--negro);
 }
 .search:hover{
     cursor: pointer;
@@ -292,5 +319,5 @@ p{
     background-size: cover;
     background-position: center center;
     width: 90%;
-    height: 70%;
+    height: 75%;
 }

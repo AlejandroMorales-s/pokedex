@@ -16,7 +16,9 @@ const fetchPokemon = () => {
         }
         //console.log(res);
     }).then((data) => {
-        console.log(data);
+        //console.log(data);
+        let id = data.id;
+        //console.log(id);
         let hp = data.stats[0].base_stat;
         let attack = data.stats[1].base_stat;
         let defense = data.stats[2].base_stat;
@@ -29,7 +31,7 @@ const fetchPokemon = () => {
         let mov4 = data.moves[3].move.name; 
         let mov5 = data.moves[4].move.name; 
         let mov6 = data.moves[5].move.name; 
-        let pokeImg = data.sprites.other.dream_world.front_default;
+        let pokeImg = data.sprites.front_default;
         let type = data.types[0].type.name; 
         pokeHp(hp);
         pokeAttack(attack);
@@ -40,7 +42,7 @@ const fetchPokemon = () => {
         move(mov1, mov2, mov3, mov4, mov5, mov6);
         pokeImage(pokeImg);  
         pokeType(type);
-        pokemon();
+        pokemon(id);
     })
 }
 const pokeImage = (url) => {
@@ -80,30 +82,26 @@ const move = (mov1, mov2, mov3, mov4, mov5, mov6) => {
     const move = document.getElementById('mov').innerHTML =`<div class="nombre-mov"><p>${mov1}</p> <p>${mov2}</p> <p>${mov3}</p> <p>${mov4}</p> <p>${mov5}</p> <p>${mov6}</p> </div>`;
 }
 const pokeType = (type) => {
-    const pokeType = document.getElementById('type').innerHTML = `${type}`;
+    const pokeType = document.getElementById('type').innerHTML = `<span class="negritas">Tipo: </span>${type.toUpperCase()}`;
 }
-const pokemon = () => {
+const pokemon = (id) => {
     const input = document.getElementById('pokeName');
     let name = input.value.toLowerCase().trim();
-    const pokemon = document.getElementById('nombre').innerHTML = `${capitalize(name)}`;
+    const pokemon = document.getElementById('nombre').innerHTML = `#${id}-${capitalize(name)}`;
 }
 const inicio = () => {
-    let contiene = document.getElementById('inicio').classList.contains('no-display')
-    if (contiene == false) {
-        document.getElementById('inicio').classList.add('no-display');
-    }
+    document.getElementById('inicio').classList.add('no-display');
+    document.getElementById('inicio-tapa').classList.add('no-display');
 }
 const work = () => {
-    let contiene = document.getElementById('work').classList.contains('no-display');
-    if (contiene != false) {
-        document.getElementById('work').classList.remove('no-display');
-    }
-}
+    document.getElementById('work').classList.remove('no-display');
+    document.getElementById('work-tapa').classList.remove('no-display');}
 const noWork = () => {
     document.getElementById('work').classList.add('no-display');
 }
 const inicioError = () => {
     document.getElementById('inicio').classList.add('no-display');
+    document.getElementById('inicio-tapa').classList.add('no-display');
 }
 function capitalize(word) {
     return word[0].toUpperCase() + word.slice(1);

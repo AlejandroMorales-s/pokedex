@@ -16,7 +16,7 @@ const fetchPokemon = () => {
         }
         //console.log(res);
     }).then((data) => {
-        console.log(data);
+        //console.log(data);
         let id = data.id;
 
         //STATS
@@ -108,11 +108,9 @@ const pokeImage = (url) => {
 const inicio = () => {
     document.getElementById('inicio').classList.add('no-display');
     document.getElementById('inicio-tapa').classList.add('no-display');
-
 }
 const inicioError = () => {
     document.getElementById('inicio').classList.add('no-display');
-
 }
 const work = () => {
     document.getElementById('work').classList.remove('no-display');
